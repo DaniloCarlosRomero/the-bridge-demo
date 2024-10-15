@@ -1,0 +1,47 @@
+@import 'custom/timelineslider';
+
+// Bootstrap variables (overrides).
+$form-text-margin-top: 0;
+$legend-font-size: 1rem;
+$table-cell-padding-x: .75rem;
+
+
+$clr-theme-primary: #2f3759;
+$clr-theme-secondary: #f4f4f7;
+$clr-theme-quart: #4ad3b3;
+$clr-theme-tertiary: #d14e15 ;
+$clr-theme-success: #2fa767;
+$clr-theme-danger: #d14e15;
+$clr-theme-warning: #4ad3b3;
+$clr-theme-info: #2f9fcb;
+$btn-primary: #d14e15; 
+
+
+$carousel-control-color: $clr-theme-primary;
+
+$theme-colors: (
+  primary: $clr-theme-primary,
+  secondary: $clr-theme-secondary,
+  tertiary: $clr-theme-tertiary,
+  success: $clr-theme-success,
+  info: $clr-theme-info,
+  danger: $clr-theme-danger,
+  warning: $clr-theme-warning,
+);
+
+.bg-primary {
+  background-color: $clr-theme-primary !important;
+}
+
+.bg-sidebar{
+  background-color: #d3d3d3;
+}
+
+$nav-link-active-bg: $clr-theme-primary;
+
+$custom-colors: (
+  "custom-btn": #4ad3b3
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
